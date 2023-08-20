@@ -4,7 +4,7 @@
       "id": "263576254",
       "name": "Admin",
       "userName": "",
-      "email": "admin@hcl.com",
+      "email": "admin@render.com",
       "password": "1234",
       "role": "Admin",
       "ipList": [],
@@ -12,18 +12,18 @@
     },
     {
       "id": "855139718",
-      "name": "Ajay Kumar",
-      "email": "user2@hcl.com",
+      "name": "KC Panda",
+      "email": "user2@render.com",
       "password": "12345",
       "role": "User",
-      "ipList": ["103.46.200.13", "127.0.0.1"],
+      "ipList": ["223.187.87.128", "127.0.0.1"],
       "userAccess": "Both",
       "superAdmin": false
     },
     {
       "id": "681424475",
       "name": "user1",
-      "email": "user1@hcl.com",
+      "email": "user1@render.com",
       "password": "12345",
       "role": "User",
       "ipList": ["0.0.0.0", "127.0.0.1"],
@@ -33,7 +33,7 @@
     {
       "id": "241820137",
       "name": "user3",
-      "email": "user3@hcl.com",
+      "email": "user3@render.com",
       "password": "12345",
       "role": "User",
       "userAccess": "PageSearch",
@@ -42,7 +42,7 @@
     {
       "id": "445530986",
       "name": "page",
-      "email": "page@hcl.com",
+      "email": "page@render.com",
       "password": "1234",
       "role": "User",
       "userAccess": "PageSearch",
@@ -51,16 +51,16 @@
     {
       "id": "963889935",
       "name": "Web",
-      "email": "web@hcl.com",
+      "email": "arjun@render.com",
       "password": "1234",
       "role": "User",
       "userAccess": "WebSearch",
-      "ipList": ["103.46.200.13", "::1"]
+      "ipList": ["223.187.87.128", "::1"]
     },
     {
       "id": "917491227",
       "name": "Both",
-      "email": "both@hcl.com",
+      "email": "both@render.com",
       "password": "1234",
       "role": "User",
       "userAccess": "Both",
