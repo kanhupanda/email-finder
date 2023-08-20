@@ -1,0 +1,5 @@
+{
+  "/jsonServer/*": "/$1",
+  "/users": "/users",
+  "/userByUserEmail\\?email=:email": "/users?email=:email"
+}

@@ -1,0 +1,49 @@
+.body {
+    background-color: #0c73ec;
+  }
+  .card {
+    border-radius: 14px;
+    border-color: transparent;
+  }
+  .login-section {
+    height: 100vh;
+  }
+  .input-group-icon {
+    background-color: transparent;
+    border-right: 0px solid transparent !important;
+    padding-left: 20px;
+  }
+  .input-control {
+    border-left: 0px solid transparent !important;
+    padding: 14px 12px 14px 0;
+    box-shadow: none !important;
+  }
+  .login-btn {
+    width: 100%;
+    border-radius: 14px;
+    background: #0c73ec;
+    /* padding: 12px; */
+  }
+  .navbar {
+    background-color: #0c73ec !important;
+  }
+  .create-edit-btn {
+    background: #0c73ec;
+    /* padding: 12px; */
+  }
+  
+  .form-control:focus { 
+    border-color: #e7e7e7 !important;
+    outline: 0;
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconLogout{
+    font-size: 1.9rem;
+    
+  }

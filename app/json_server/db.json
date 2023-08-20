@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "263576254",
+      "name": "Admin",
+      "userName": "",
+      "email": "admin@hcl.com",
+      "password": "1234",
+      "role": "Admin",
+      "ipList": [],
+      "superAdmin": true
+    },
+    {
+      "id": "855139718",
+      "name": "Ajay Kumar",
+      "email": "user2@hcl.com",
+      "password": "12345",
+      "role": "User",
+      "ipList": ["103.46.200.13", "127.0.0.1"],
+      "userAccess": "Both",
+      "superAdmin": false
+    },
+    {
+      "id": "681424475",
+      "name": "user1",
+      "email": "user1@hcl.com",
+      "password": "12345",
+      "role": "User",
+      "ipList": ["0.0.0.0", "127.0.0.1"],
+      "userAccess": "WebSearch",
+      "superAdmin": false
+    },
+    {
+      "id": "241820137",
+      "name": "user3",
+      "email": "user3@hcl.com",
+      "password": "12345",
+      "role": "User",
+      "userAccess": "PageSearch",
+      "ipList": ["0.0.0.0", "127.0.0.1"]
+    },
+    {
+      "id": "445530986",
+      "name": "page",
+      "email": "page@hcl.com",
+      "password": "1234",
+      "role": "User",
+      "userAccess": "PageSearch",
+      "ipList": ["103.46.200.13", "::1"]
+    },
+    {
+      "id": "963889935",
+      "name": "Web",
+      "email": "web@hcl.com",
+      "password": "1234",
+      "role": "User",
+      "userAccess": "WebSearch",
+      "ipList": ["103.46.200.13", "::1"]
+    },
+    {
+      "id": "917491227",
+      "name": "Both",
+      "email": "both@hcl.com",
+      "password": "1234",
+      "role": "User",
+      "userAccess": "Both",
+      "ipList": ["103.46.200.13", "::1"]
+    }
+  ]
+}

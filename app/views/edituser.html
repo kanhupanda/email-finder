@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email Finder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/46c9aa038d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img src="/logo.png" alt="" srcset="" style="width: 30px; height: 30px;">
+                <a class="navbar-brand text-white" href="/">Email Finder</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="/searchemail">Search Email</a>
+                    </li>
+                </ul>
+                <div class="me-1 text-white">Welcome</div>
+                <a class="link-offset-2 link-underline link-underline-opacity-0 fw-bold text-white"
+                    style="padding-right: 5rem;" id="loggedUserName"></a>
+                <a class="link-offset-2 link-underline link-underline-opacity-0 text-white ps-4" href="/logout">
+                    <i class="fa-solid fa-right-from-bracket" style="font-size: 1.9rem;"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Panel -->
+    <div class="container mt-5">
+        <form action="" id="userform">
+            <div class="row">
+                <div class="col-5 col-12-sm">
+                    <!-- Back Button -->
+                    <a class="link-offset-2 link-underline link-underline-opacity-0" href="javascript:history.back()">
+                        <button type="button" class="btn btn-primary">Back</button>
+                    </a>
+                    <!-- Form -->
+                    <form>
+                        <div class="mt-4 mb-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" />
+                        </div>
+                        <div class="mb-2">
+                            <label for="useremail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="useremail" />
+                        </div>
+                        <div class="mb-2">
+                            <label for="userpassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="userpassword" />
+                        </div>
+                        <div class="mb-2 d-none">
+                            <label for="userRole" class="form-label">Role</label>
+                            <select class="form-select" onchange="onSelectChange()" id="userRole"
+                                aria-label="Default select example">
+                                <option value="User">User</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+                        <div class=" " style="display: none;" id="ipAddressList">
+                            <label for="userIP" class="form-label">IP Address</label>
+
+                        </div>
+                        <div id="userAccessSection">
+                            <p class=" mt-1">User Access</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="userAccess" type="radio" id="userAccess1"
+                                    value="PageSearch">
+                                <label class="form-check-label" for="userAccess1">Page Search</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="userAccess" type="radio" id="userAccess2"
+                                    value="WebSearch">
+                                <label class="form-check-label" for="userAccess2">Web Search</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="userAccess" type="radio" id="userAccess3"
+                                    value="Both">
+                                <label class="form-check-label" for="userAccess3">Both</label>
+                            </div>
+                        </div>
+                        <button type="button" onclick="update()" class="btn btn-primary mt-4">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="edituser.js"></script>
+</body>
+
+</html>

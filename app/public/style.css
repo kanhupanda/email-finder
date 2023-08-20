@@ -1,0 +1,46 @@
+.overlayLocal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a7a7a761;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tabs {
+  background: #007b5e;
+  color: #eee;
+}
+
+#tabs h6.section-title {
+  color: #eee;
+}
+
+.nav-fill .nav-item,
+.nav-fill > .nav-link {
+  flex: 1 1 auto;
+  text-align: center;
+  color: #626262;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #6a37da;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 4px solid #9c3aff !important;
+  font-size: 16px;
+}
+
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #eee;
+  font-size: 20px;
+}

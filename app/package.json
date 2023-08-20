@@ -1,0 +1,28 @@
+{
+  "name": "node_web_scrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node index.js",
+    "db": "json-server --watch json_server/db.json --routes json_server/routes.json --port 8912"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "got": "^13.0.0",
+    "is-valid-http-url": "^1.0.3",
+    "json-server": "^0.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.22",
+    "request-ip": "^3.3.0"
+  }
+}
