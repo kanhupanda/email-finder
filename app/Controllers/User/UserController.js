@@ -1,7 +1,7 @@
 const axios = require("axios");
 const requestIp = require("request-ip");
 const { JWT_SECRECT } = require("./constants");
-const dbServerUrl = "http://localhost:8912";
+const dbServerUrl = "http://0.0.0.0:8912";
 const jwt = require("jsonwebtoken");
 
 exports.register = async (req, res) => {
