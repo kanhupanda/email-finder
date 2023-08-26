@@ -14,7 +14,7 @@
     ],
     "headers": [
       {
-        "source": "/images/(.*)",
+        "source": "/pictures/(.*)",
         "headers": [
           {
             "key": "Cache-Control",
