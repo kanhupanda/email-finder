@@ -1,7 +1,7 @@
 const axios = require("axios");
 const requestIp = require("request-ip");
 const { JWT_SECRECT } = require("./constants");
-const dbServerUrl = "https://email-finder-db.onrender.com/";
+const dbServerUrl = "https://email-finder-db.onrender.com";
 const jwt = require("jsonwebtoken");
 
 exports.register = async (req, res) => {
