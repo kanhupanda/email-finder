@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "node index.js",
-    "db": "json-server --watch json_server/db.json --routes json_server/routes.json --port 8912"
+    "db": "node root.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
