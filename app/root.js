@@ -1,17 +1,37 @@
-const jsonServer = require("json-server"); // importing json-server library
-const server = jsonServer.create();
-const router = jsonServer.router("./json_server/db.json");
+const express = require('express');
+const jsonServer = require('json-server');
+const app = express();
+const port = 8912;
+
+const router = jsonServer.router('./json_server/db.json');
 const middlewares = jsonServer.defaults();
 
-// Load custom routes from routes.json
+// Load custom routes
 const customRoutes = require('./json_server/routes.json');
 
-// Set up custom routes
-router.db.setState(customRoutes);
+// Custom middleware to handle complex routes with query parameters
+app.use((req, res, next) => {
+  for (const route in customRoutes) {
+    const target = customRoutes[route];
+    if (req.path.startsWith(route)) {
+      // Replace the route part
+      const modifiedPath = req.path.replace(route, target);
+      
+      // If the route contains an email query parameter, add it back
+      if (req.query.email) {
+        modifiedPath += `?email=${req.query.email}`;
+      }
+      
+      req.url = modifiedPath;
+      break;
+    }
+  }
+  next();
+});
 
-const port = process.env.PORT || 8912; // you can use any port number here; i chose to use 3001
+app.use(middlewares);
+app.use(router);
 
-server.use(middlewares);
-server.use(router);
-
-server.listen(port, () => console.log(`Server started at port : ${port}`));
+app.listen(port, () => {
+  console.log(`JSON Server is running on port ${port}`);
+});

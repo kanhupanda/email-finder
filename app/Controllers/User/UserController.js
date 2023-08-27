@@ -2,6 +2,7 @@ const axios = require("axios");
 const requestIp = require("request-ip");
 const { JWT_SECRECT } = require("./constants");
 const dbServerUrl = "https://email-finder-db.onrender.com";
+// const dbServerUrl = "http://localhost:8912";
 const jwt = require("jsonwebtoken");
 
 exports.register = async (req, res) => {
@@ -26,7 +27,7 @@ exports.register = async (req, res) => {
       return res
         .status(200)
         .json({ message: "Email already exist", status: false });
-    }
+    }   
 
     let data = JSON.stringify({
       id: id,
