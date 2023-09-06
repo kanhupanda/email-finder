@@ -4,15 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "node index.js",
-    "db": "node root.js"
+ "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run dev\" \"json-server --watch json_server/db.json --routes json_server/routes.json --port 8912\"",
+    "dev": "node index.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
     "body-parser": "^1.20.2",
     "cheerio": "^1.0.0-rc.12",
+    "concurrently": "^8.2.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
